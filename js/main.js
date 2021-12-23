@@ -29,7 +29,7 @@ if (fullPrice > 30000) {
     console.log("Скидка не предусмотрена");
     console.log(fullPrice);
 } else {
-    console.log("Что-то пошло не так...")
+    console.log("Что-то пошло не так...");
 }
 
 //Логгеры
