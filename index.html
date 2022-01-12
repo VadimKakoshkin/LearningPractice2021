@@ -1,18 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/main.js"></script>
-    <title>GitHub</title>
+    <title>Калькулятор вёрстки</title>
 </head>
 <body>
     
-    <div id="github">GitHub</div>
-    <div id="github2">GitHub</div>
-    <!--Комментарий-->
+    <header class="header">
+        <div class="container">
+            <h1 class="title" id="title">Калькулятор вёрстки</h1>
+        </div>
+        <!-- /.container -->
+    </header>
+    <!-- /.header -->
+
+    <main class="main">
+        <div class="container">
+            <div class="main-box">
+                <div class="main-controls elements">
+                    <div class="main-controls__views element">
+                        <h3>Расчёт по типу экрана</h3>
+                        <div class="main-controls__item screen">
+                            <div class="main-controls__select">
+                                <select name="views-select">
+                                    <option value="" selected>Тип экранов</option>
+                                    <option value="500">Простых 500руб * n</option>
+                                    <option value="700">Сложных 700руб * n</option>
+                                    <option value="800">Интерактивных 800руб * n</option>
+                                    <option value="100">Форм 100руб * n</option>
+                                    <option value="300">Слайдеров 300руб * n</option>
+                                    <option value="200">Модальные окна 200руб * n</option>
+                                    <option value="500">Анимация в блоках 100руб * n</option>
+                                </select>
+                            </div>
+                            <!-- /.main-controls__select -->
+                            <div class="main-controls__input">
+                                <input type="text" placeholder="Количество экранов">
+                            </div>
+                            <!-- /.main-controls__input -->
+                        </div>
+                        <!-- /.main-controls__item screen -->
+
+                        <button class="screen-btn">+</button>
+                    </div>
+                    <!-- /.main-controls__views element -->
+                </div>
+                <!-- /.main-controls elements -->
+            </div>
+            <!-- /.main-box -->
+        </div>
+        <!-- /.container -->
+    </main>
+    <!-- /.main -->
 
 </body>
 </html>
