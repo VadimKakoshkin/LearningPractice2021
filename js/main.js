@@ -33,3 +33,11 @@ if (fullPrice > 30000) {
 }
 
 //Логгеры
+console.log(typeof title);
+console.log(typeof screenPrice);
+console.log(typeof adaptive);
+
+console.log(screens.length);
+console.log(serviePercentPrice);
+
+console.log("Стоимость верстки экранов " + screenPrice + " рублей");
