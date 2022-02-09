@@ -1,35 +1,45 @@
 //Переменные
-let title = "GitHub";
-let screens = "Простые, Сложные, Интерактивные";
-let screenPrice = 33;
-let rollback = 74;
-let fullPrice = 1000000;
-let adaptive = true;
+let lang = prompt("Выберите язык");
+let arr = [];
+let namePerson = prompt("Как вас зовут?");
 
-//Интеракция с пользователем
-title = prompt("Как называется ваш проект?");
-screens = prompt("Какие типы экранов нужно разработать?");
-screenPrice = +prompt("Сколько будет стоить данная работа?");
-adaptive = prompt("Нужен ли адаптив на сайте?");
-let service1 = prompt("Какой дополнительный тип услуги нужен?");
-let servicePrice1 = +prompt("Сколько это будет стоить?");
-let service2 = prompt("Какой дополнительный тип услуги нужен?");
-let servicePrice2 = +prompt("Сколько это будет стоить?");
-fullPrice = screenPrice + servicePrice1 + servicePrice2;
-let servicePercentPrice = Math.round(fullPrice - rollback);
-
-//Условия
-if (fullPrice > 30000) {
-    console.log("Даём скидку в 10%");
-    console.log(fullPrice * 0.9);
-} else if (fullPrice > 15000 && fullPrice <= 30000) {
-    console.log("Даём скидку в 5%");
-    console.log(fullPrice * 0.95);
-} else if (fullPrice >= 0 && fullPrice <= 15000) {
-    console.log("Скидка не предусмотрена");
-    console.log(fullPrice);
-} else {
-    console.log("Что-то пошло не так...");
+//Задача 1 (Условия)
+/*
+if (lang == "ru") {
+    console.log("Выбран русский язык");
+    arr = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
+} else if (lang == 'en') {
+    console.log("English has been selected")
+    arr = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 }
+console.log(arr);
+*/
 
-//Логгеры
+//Задача 1 (Switch-case)
+/*
+switch (lang) {
+    case 'ru':
+        console.log("Выбран русский язык");
+        arr = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
+        break;
+    case 'en':
+        console.log("English has been selected")
+        arr = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+        break;
+}
+console.log(arr);
+*/
+
+//Задача 1 (Многомерный массив)
+/*
+arr = {
+ 	'ru':['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'],
+ 	'en':['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+};
+console.log(arr[lang]);
+*/
+
+//Задача 2
+console.log((namePerson === 'Артем') ? 'директор' :
+    (namePerson === 'Александр') ? 'преподаватель' :
+    'студент');
